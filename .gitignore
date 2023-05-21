@@ -1,0 +1,46 @@
+##### BACKEND #####
+# dependencies
+/ditalks-backend/node_modules
+/ditalks-backend/.pnp
+/ditalks-backend/.pnp.js
+
+# production
+/ditalks-backend/dist
+
+# local env files
+/ditalks-backend/.env
+
+##### FRONTEND #####
+# dependencies
+/ditalks-frontend/node_modules
+/ditalks-frontend/.pnp
+/ditalks-frontend/.pnp.js
+
+# testing
+/ditalks-frontend/coverage
+
+# next.js
+/ditalks-frontend/.next/
+/ditalks-frontend/out/
+
+# production
+/ditalks-frontend/build
+
+# misc
+/ditalks-frontend/.DS_Store
+/ditalks-frontend/*.pem
+
+# debug
+/ditalks-frontend/npm-debug.log*
+/ditalks-frontend/yarn-debug.log*
+/ditalks-frontend/yarn-error.log*
+
+# local env files
+/ditalks-frontend/.env*.local
+
+# vercel
+/ditalks-frontend/.vercel
+
+# typescript
+/ditalks-frontend/*.tsbuildinfo
+/ditalks-frontend/next-env.d.ts

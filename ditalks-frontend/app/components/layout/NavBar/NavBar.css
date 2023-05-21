@@ -1,0 +1,7 @@
+.header {
+  @apply w-full absolute border-b-[1px] bg-transparent border-b-black-opacity-70 h-[70px] flex items-center z-30 transition-all duration-300 ease-in-out;
+}
+
+.active-header {
+  @apply fixed top-0 left-0 bg-white;
+}

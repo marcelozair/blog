@@ -1,0 +1,3 @@
+.text-field {
+  @apply w-full bg-none outline-none border-[2px] border-black-opacity-10 px-2 py-1 rounded-md transition-all ease-in-out duration-200 focus:border-[2px] focus:border-secundary placeholder-black-opacity-30 text-black;
+}
