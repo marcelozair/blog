@@ -1,16 +1,17 @@
+import classnames from 'classnames';
 import React, { useState } from 'react';
-
 interface PasswordFieldProps extends React.DetailedHTMLProps<
   React.InputHTMLAttributes<HTMLInputElement>,
   HTMLInputElement
 > {
-
+  hasError: boolean;
 }
 
-const PasswordField: React.FC<PasswordFieldProps> = (props) => {
+const PasswordField = React.forwardRef<HTMLInputElement, PasswordFieldProps>((props, ref) => {
   const [show, setShow] = useState(false);
 
   const {
+    hasError,
     disabled,
     ...rest
   } = props;
@@ -18,8 +19,14 @@ const PasswordField: React.FC<PasswordFieldProps> = (props) => {
   return (
     <div className="relative">
       <input
+        ref={ref}
         {...rest}
-        className="text-field"
+        className={
+          classnames(
+            "text-field",
+            { 'text-fiel__error': hasError }
+          )
+        }
         type={show ? "text" : "password"}
       />
       {show ? (
@@ -39,6 +46,6 @@ const PasswordField: React.FC<PasswordFieldProps> = (props) => {
       )}
     </div>
   );
-}
+});
 
 export default PasswordField;

@@ -26,7 +26,11 @@ module.exports = {
         'black-opacity-50': 'var(--black-opacity-50)',
         'black-opacity-30': 'var(--black-opacity-30)',
         'black-opacity-10': 'var(--black-opacity-10)',
+
         'primary-opacity-70': 'var(--primary-opacity-70)',
+
+
+        'error': 'var(--error)',
 
         'letter-title': 'var(--black)'
       }
